@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nmarmon/learn-directive/issues"
   },
-  "homepage": "https://github.com/nmarmon/learn-directive#readme"
+  "homepage": "https://github.com/nmarmon/learn-directive#readme",
+  "dependencies": {
+    "angular": "^1.6.1"
+  }
 }
