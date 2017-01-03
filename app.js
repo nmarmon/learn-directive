@@ -20,7 +20,6 @@
 
                 }
             ];
-            this.select = '/';
             //this.orientation = 'vertical';
 
         });
