@@ -5,11 +5,11 @@
     <title>Prueba de directivas de Angular</title>
     </head>
     <body>
-        <header ng-controller="navCtrl as vm">
+        <header ng-controller="headerCtrl as vm">
             PARENT (navCtrl) <br />
             items: {{vm.items}} <br />
             select: {{vm.selected}} <br />
-            <my-nav items="vm.items"></my-nav>
+            <my-nav></my-nav>
         </header>
         <hr>
 

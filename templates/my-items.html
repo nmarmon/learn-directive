@@ -1,0 +1,7 @@
+<br />
+CHILD (myItems directive) <br />
+items: {{items}} <br />
+<!--TODO: Solo se me ocurre poder cambiar tipo de lista o incluso a paneles haciendo una transclusión. Peor en ese caso, hay que ver como encajar la iteracción.-->
+<ul>
+    <li ng-repeat="item in items" ng-click="onSelect({myItem: item})">{{item.name}}</li>
+</ul>
