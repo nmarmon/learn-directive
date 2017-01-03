@@ -6,10 +6,10 @@
     </head>
     <body>
         <header ng-controller="navCtrl as vm">
-            Parent: <br />
+            PARENT (navCtrl) <br />
             items: {{vm.items}} <br />
             select: {{vm.select}} <br />
-            <my-nav my-items="vm.items"></my-nav>
+            <my-nav items="vm.items"></my-nav>
         </header>
         <hr>
 
