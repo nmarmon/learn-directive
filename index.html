@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html ng-app="app">
+    <head>
     <meta charset="utf-8">
     <title>Prueba de directivas de Angular</title>
-  </head>
-  <body>
-    <script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
-    <script type="text/javascript" src="./lib/modules/attributte.js"></script>
-    <script type="text/javascript" src="./lib/modules/element.js"></script>
-    <script type="text/javascript" src="./lib/modules/comment.js"></script>
-    <script type="text/javascript" src="./lib/modules/class-name.js"></script>
-    <script type="text/javascript" src="./lib/app.js"></script>
-  </body>
+    </head>
+    <body>
+        <header ng-controller="navCtrl as vm">
+            Parent: <br />
+            items: {{vm.items}} <br />
+            select: {{vm.select}} <br />
+            <my-nav my-items="vm.items"></my-nav>
+        </header>
+        <hr>
+
+
+        <script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="./lib/modules/attributte.js"></script>
+        <script type="text/javascript" src="./lib/modules/element.js"></script>
+        <script type="text/javascript" src="./lib/modules/comment.js"></script>
+        <script type="text/javascript" src="./lib/modules/class-name.js"></script>
+        <script type="text/javascript" src="./app.js"></script>
+    </body>
 </html>
