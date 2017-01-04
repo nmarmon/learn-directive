@@ -6,7 +6,16 @@
     </head>
     <body>
         <header ng-controller="headerCtrl as vm">
-            PARENT (navCtrl) <br />
+            PARENT (headerCtrl) <br />
+            logo: {{vm.logo}} <br />
+            img: (without my-logo)<img src="images/logo.jpg" width="30" height="30"/> <br /><br />
+
+            NO-ISOLATE CHILD (my-logo) <br />
+            img: (with my-logo)<img my-logo width="30" height="30"/>
+
+            <hr>
+
+            PARENT (headerCtrl) <br />
             items: {{vm.items}} <br />
             select: {{vm.selected}} <br />
             <my-nav></my-nav>
@@ -15,7 +24,7 @@
 
 
         <script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
-        <script type="text/javascript" src="./lib/modules/attributte.js"></script>
+        <script type="text/javascript" src="./lib/modules/attribute.js"></script>
         <script type="text/javascript" src="./lib/modules/element.js"></script>
         <script type="text/javascript" src="./lib/modules/comment.js"></script>
         <script type="text/javascript" src="./lib/modules/class-name.js"></script>
