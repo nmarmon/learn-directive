@@ -1,0 +1,146 @@
+/* RESOLUCION GENERAL (MOBILE FIRST)*/
+/*ESTILOS GENERALES*/
+* {
+	color:black;
+	font-size:16px;
+	font-family:Sans-serif;
+}
+
+html, body, menu, h1, h2, h3, h4, h5, h6, span, header, main, footer{
+	margin:0;
+	padding:0;
+}
+
+body {
+	display: flex;
+    flex-flow: row wrap;
+	min-height:100vh;
+	margin: 0 auto;
+	height:100%;
+	/*margin-top:-16px;*/
+	/*background:#748793;*/
+	/*border-bottom: 5px solid gray;*/
+}
+
+/*HEADER PAGE*/
+.web-header {
+	display:flex;
+	background: #999;
+	width:100%;
+	height: 180px;
+    overflow-y:auto;
+}
+
+	/*LOGO*/
+	.web-header .logo{
+		width:30%;
+	}
+
+	/*NAV*/
+	.web-header .nav{
+		width:70%;
+	}
+
+	.web-header .nav ul{
+		background:#666;
+	}
+
+		.web-header .nav ul li{
+			display:inline-block;
+			padding:10px;
+			margin-right:10px;
+			color:#fff;
+			text-decoration: underline;
+		}
+
+			.web-header .nav ul li:hover{
+				color:#ddd;
+			}
+
+
+/*MAIN PAGE*/
+.web-main {
+    width: 70%;
+	min-height: 70vh;
+    background: #ddd;
+}
+
+/*ASIDE PAGE*/
+.web-sidebar {
+    width: 30%;
+	min-height: 80vh;
+    background: #bbb;
+}
+
+	/*BANNERS*/
+	.web-sidebar .banners{
+        background: #fff;
+    }
+
+		.web-sidebar .banners .banner-asketic{
+
+		}
+
+			.web-sidebar .banners .banner-asketic{
+
+			}
+
+				.web-sidebar .banners .banner-asketic .header-banners{
+					margin:0px 10px 0px 10px;
+				}
+
+					.web-sidebar .banners .banner-asketic .header-banners h1{
+						font-size: 1.3rem;
+			            text-align: center;
+					}
+
+				.web-sidebar .banners .banner-asketic div{
+					margin:0px 10px 0px 10px;
+					border: 2px solid #006400;
+		            border-radius: 10px;
+		            margin-bottom:5px;
+				}
+
+					.web-sidebar .banners .banner-asketic div h4{
+						font-size: 1.1rem;
+						background: #006400;
+						padding:5px 0px 5px 0px;
+			            border-top-left-radius: 5px;
+			            border-top-right-radius: 5px;
+						color:#fff;
+						text-align:center;
+					}
+
+
+	/*WIDGETS*/
+    .web-sidebar .widgets{
+        background: #eee;
+    }
+
+    .web-sidebar .widgets .widget-area{
+        margin:0px 10px 0px 10px;
+    }
+
+        .web-sidebar .widgets .widget-area h1{
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        .web-sidebar .widgets .widget-area .header-widget{
+            background: #4169E1;
+            padding:4px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+            .web-sidebar .widgets .widget-area .header-widget .ng-binding{
+                font-size:1.1rem;
+                color: #fff;
+            }
+
+        .web-sidebar .widgets .widget-area .main-wdiget{
+            border: 2px solid #4169E1;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-bottom:5px;
+        }

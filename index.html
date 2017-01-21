@@ -3,19 +3,25 @@
     <head>
     <meta charset="utf-8">
     <title>Prueba de directivas de Angular</title>
+    <link rel=stylesheet href="css/style.css">
     </head>
     <body>
-        <header ng-controller="headerCtrl as vm">
-            PARENT (headerCtrl) <br />
-            logo: {{vm.logo}} <br />
-            img: (without my-logo)<img src="images/logo.jpg" width="30" height="30"/> <br /><br />
+        <header ng-controller="headerCtrl as vm" class="web-header">
+            <div class="logo">
+                headerCtrl (vm.logo): {{vm.logo}} <br />
+                NO-ISOLATE CHILD (my-logo) <br />
+                img: (with my-logo)<img my-logo width="30" height="30"/>
+            </div>
+            <div class="nav">
+                <my-nav></my-nav>
+            </div>
+        </header>
 
-            NO-ISOLATE CHILD (my-logo) <br />
-            img: (with my-logo)<img my-logo width="30" height="30"/>
+        <main class="web-main">
 
-            <hr>
+        </main>
 
-            PARENT (headerCtrl) <br />
+        <aside ng-controller="asideCtrl as vm" class="web-sidebar">
             <section class="banners">
                 <div my-banner class="banner-asketic">
                     <h4>AskeTIC Coop</h4>
@@ -27,15 +33,17 @@
                     </ul>
                 </div>
             </section>
-            <hr>
+            items: {{vm.widgets}} <br />
+            <section class="widgets">
+                <my-widget-area classes="widget widget-aside" type="aside">
+                    <my-widget ng-repeat="widget in vm.widgets" widget="widget"></my-widget>
+                </my-widget-area>
+                <div class="otra-cosa">
 
-            PARENT (headerCtrl) <br />
-            items: {{vm.items}} <br />
-            select: {{vm.selected}} <br />
-            <my-nav></my-nav>
-        </header>
-        <hr>
+                </div>
+            </section>
 
+        </aside>
 
         <script type="text/javascript" src="./node_modules/angular/angular.min.js"></script>
         <script type="text/javascript" src="./lib/modules/attribute.js"></script>
