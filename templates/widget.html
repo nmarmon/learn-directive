@@ -1,0 +1,10 @@
+<header class="header-widget">
+    <h1>{{widget.title}}</h1>
+</header>
+<!--Parece que ng-transclude ha de ser un div, con body no funciona-->
+<main class="main-wdiget">
+    <div class="{{classes}}" ng-include="widget.template"></div>
+</main>
+<footer class="footer-widget">
+
+</footer>
