@@ -3,8 +3,18 @@
         .controller('headerCtrl', function(){
             var that = this;
             this.logo = 'images/logo.jpg';
-            //this.orientation = 'vertical';
-
+            var formats = { en: 'medium',
+                            es: 'dd/M/yyyy, H:mm:ss'
+                            };
+            this.format = formats.es;
+            this.changeFormat = function(newFormat){
+                console.log(newFormat);
+                if(newFormat === 'en'){
+                    this.format = formats.en;
+                }else{
+                    this.format = formats.es;
+                }
+            }
         })
         .controller('asideCtrl', function(){
             var that = this;

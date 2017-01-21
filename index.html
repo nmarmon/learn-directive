@@ -11,6 +11,11 @@
                 headerCtrl (vm.logo): {{vm.logo}} <br />
                 NO-ISOLATE CHILD (my-logo) <br />
                 img: (with my-logo)<img my-logo width="30" height="30"/>
+                <hr>
+  	            Date format: <button ng-click="vm.changeFormat('es')">ES</button>
+                             <button ng-click="vm.changeFormat('en')">EN</button>
+                             <br />
+  	            Current time is: <span my-time="vm.format"></span>
             </div>
             <div class="nav">
                 <my-nav></my-nav>
